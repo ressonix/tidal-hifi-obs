@@ -42,7 +42,6 @@ export default function Home() {
     <div className="flex items-center justify-center h-screen bg-transparent">
       <div className="w-1/2">
         <div className="relative">
-          <img src={image} className="w-full" alt={title} />
           <div className="absolute inset-0 bg-gradient-to-r from-transparent to-black opacity-50" />
           <div className="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gray-900 bg-opacity-75 text-white">
             <div className="font-bold text-lg">{title}</div>
