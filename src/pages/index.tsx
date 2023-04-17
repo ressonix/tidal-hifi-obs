@@ -39,7 +39,7 @@ export default function Home() {
   const progress = (parseInt(current.split(":")[0], 10) * 60 + parseInt(current.split(":")[1], 10)) / (parseInt(duration.split(":")[0], 10) * 60 + parseInt(duration.split(":")[1], 10)) * 100;
 
   return (
-    <div className="flex items-center justify-center h-screen bg-transparent">
+    <div className="flex items-center justify-center h-screen bg-transparent blur-md">
       <div className="w-1/2">
         <div className="relative">
           <div className="absolute inset-0 bg-gradient-to-r from-transparent to-black opacity-50" />
@@ -50,10 +50,6 @@ export default function Home() {
         </div>
         <div className="relative h-2 overflow-hidden bg-gray-500">
           <div className="absolute inset-0 bg-blue-600" style={{ width: `${progress}%` }} />
-        </div>
-        <div className="flex justify-between mt-2 text-xs text-white">
-          <div>{current}</div>
-          <div>{duration}</div>
         </div>
       </div>
     </div>
