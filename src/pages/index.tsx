@@ -52,7 +52,7 @@ export default function Home() {
         <div className="relative mt-4 h-4 rounded-full overflow-hidden bg-gray-500">
           <div className="absolute inset-0 bg-blue-600" style={{ width: `${progress}%` }} />
         </div>
-        <div className="flex justify-between mt-2 text-xs text-gray-500">
+        <div className="flex justify-between mt-2 text-xs text-white">
           <div>{current}</div>
           <div>{duration}</div>
         </div>
