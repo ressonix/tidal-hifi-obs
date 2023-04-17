@@ -49,8 +49,8 @@ export default function Home() {
             <div className="text-sm">{artist}</div>
           </div>
         </div>
-        <div className="relative mt-4 h-4 rounded-full overflow-hidden bg-gray-700">
-          <div className="absolute inset-0 bg-gray-600" style={{ width: `${progress}%` }} />
+        <div className="relative mt-4 h-4 rounded-full overflow-hidden bg-gray-500">
+          <div className="absolute inset-0 bg-blue-600" style={{ width: `${progress}%` }} />
         </div>
         <div className="flex justify-between mt-2 text-xs text-gray-500">
           <div>{current}</div>
