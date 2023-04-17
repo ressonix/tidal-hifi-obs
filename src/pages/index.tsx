@@ -19,7 +19,7 @@ export default function Home() {
   useEffect(() => {
     const fetchCurrentTrack = async () => {
       try {
-        const response = await axios.get<Track>("http://localhost:47836/current");
+        const response = await axios.get<Track>("https://np.ressonix.dev/current");
         setCurrentTrack(response.data);
       } catch (error) {
         console.error(error);
